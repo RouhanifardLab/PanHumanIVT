@@ -6,7 +6,7 @@ Here we present an IVT dataset for 5 human cell lines; HeLa, HepG2, SH-SY5Y, NTE
 
 ## SNV Analysis
 In the IVT_SNV_analysis.ipynb we identify SNVs in each of cellular datasets from pysamstats pileups. We only considered SNVs that occured at loci with a minimum of 10 reads for the cell line (pooled if there were multiple sequencing runs) and where the SNV in question accounted for 30% of the total reads at a position. 
-We repeated this analysis for SNV occurence of 40,50,60,70,80, and 95% all while maintaining the minimum read threshold of 10. The SNVs identified at each level were further binned into known variants according to Ensembl, variants occuring in low confidence kmers, and putative IVT variants.
+We repeated this analysis for SNV occurence of 40, 50, 60, 70, 80, and 95% all while maintaining the minimum read threshold of 10. The SNVs identified at each level were further binned into known variants according to Ensembl, variants occuring in low confidence kmers, and putative IVT variants.
 These SNV datasets are available as .tsv files and include the relevant pysamstats information for each SNV.
 The tsv files have the following format:
 |Column Number| Contents |
