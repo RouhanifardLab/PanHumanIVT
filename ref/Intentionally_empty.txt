@@ -1,0 +1,1 @@
+This directory is where any gvf files should be placed for SNV analysis, due to size they are too large for github.
