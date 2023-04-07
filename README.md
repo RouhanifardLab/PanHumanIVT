@@ -3,6 +3,7 @@
 Here we present an IVT dataset for 5 human cell lines; HeLa, HepG2, SH-SY5Y, NTERA, and A549. In this GitHub repository we've included all of our analysis code. Due to the size of the component data we're hosting files such bam files, fast5, fastq, and Eventalign files on Dropbox at the following URL: www.dropbox.com. Many of the notebooks and code will not run without these files. If you would like to reproduce our analysis we recommend downloading the entire directory from dropbox and executing the code from there.
 
 ## Biological Replicate Analysis
+Median alignment identity was computed using the nanoplot package in R.
 
 ## SNV Analysis
 In the IVT_SNV_analysis.ipynb we identify SNVs in each of cellular datasets from pysamstats pileups. We only considered SNVs that occured at loci with a minimum of 10 reads for the cell line (pooled if there were multiple sequencing runs) and where the SNV in question accounted for 30% of the total reads at a position. 
