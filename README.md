@@ -37,3 +37,15 @@ The multiple cell line analysis examined the relationships between our IVT datas
 5. Subsample_Gene_Binary.ipynb - Using gene representation binaries for each cell line and completing a pairwise dice similarity measurement
 
 6. unique_gene_count.ipynb - Subsampling experiment to determine the number of genes in each of our cell lines from up to 1,000,000 reads.
+
+Software & Hardware Dependencies:
+samtools 1.16.1 (using htslib 1.16)
+python 3
+R 4.11
+Jupyterlab 3.4.4
+
+Installation: All analysis can be run directly from provided scripts, no installation required.
+
+Demo: To run code, please download repository found in the Dropbox URL above and execute scripts and / or notebooks
+
+Expect Output: Data analysis, figures, identified variant tsv files, and bed files for identified variants
