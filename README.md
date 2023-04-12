@@ -1,9 +1,9 @@
 # PanHumanIVT
 ## Summary
-Here we present an IVT dataset for 5 human cell lines; HeLa, HepG2, SH-SY5Y, NTERA, and A549. In this GitHub repository we've included all of our analysis code. Due to the size of the component data we're hosting files such bam files, fast5, fastq, and Eventalign files on Dropbox at the following URL: www.dropbox.com. Many of the notebooks and code will not run without these files. If you would like to reproduce our analysis we recommend downloading the entire directory from dropbox and executing the code from there.
+Here we present an IVT dataset for 5 human cell lines; HeLa, HepG2, SH-SY5Y, NTERA, and A549. In this GitHub repository we've included all of our analysis code. Due to the size of the component data we're hosting files such bam files, fast5, fastq, and Eventalign files on [Dropbox](https://www.dropbox.com/sh/8r76vesjz01mkyq/AACweGZTB1c_tPCu_qxtB1Hha?dl=0). Additionally, fastq and fast5 files can be found on NIH NCBI SRA under the BioProject accession [PRJNA947135](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA947135). Many of the notebooks and code will not run without these files. If you would like to reproduce our analysis we recommend downloading the entire directory from dropbox and executing the code from there.
 
 ## Biological Replicate Analysis
-Median alignment identity was computed using the nanoplot package in R.
+In FIG1github.R script we run a comparative performance analysis of three independent biological IVT replicates from the HeLa cell line. Generation of the input data is derived from the sam/bam files. The specific terminal commands are included in the comments of the R script. We used [NanoPlot](https://github.com/wdecoster/NanoPlot) v1.40.2 and the --raw option to extract percent identity for each read and all other alignment identity statistics. All plots populated for this analysis are included in the R script. 
 
 ## SNV Analysis
 In the IVT_SNV_analysis.ipynb we identify SNVs in each of cellular datasets from pysamstats pileups. We only considered SNVs that occured at loci with a minimum of 10 reads for the cell line (pooled if there were multiple sequencing runs) and where the SNV in question accounted for 30% of the total reads at a position. 
@@ -43,7 +43,9 @@ samtools 1.16.1 (using htslib 1.16)
 
 python 3
 
-R 4.11
+R 4.1.1
+
+NanoPlot 1.40.2
 
 Jupyterlab 3.4.4
 
