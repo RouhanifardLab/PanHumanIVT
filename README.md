@@ -40,15 +40,18 @@ The multiple cell line analysis examined the relationships between our IVT datas
 
 ## Software & Hardware Dependencies:
 samtools 1.16.1 (using htslib 1.16)
+
 python 3
+
 R 4.11
+
 Jupyterlab 3.4.4
 
 ## Installation
 All analysis can be run directly from provided scripts, no installation beyond dependencies required.
 
 ## Demo 
-To run code, please download repository found in the Dropbox URL above and execute scripts and / or notebooks
+To run code, please download repository found in the Dropbox URL above and execute scripts and / or notebooks.
 
 ## Expected Output 
-Data analysis figures, identified variant tsv files, and bed files for identified variants
+Data analysis figures, identified variant tsv files, and bed files for identified variants.
