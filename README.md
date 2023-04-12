@@ -54,6 +54,7 @@ All analysis can be run directly from provided scripts, no installation beyond d
 
 ## Demo 
 To run code, please download repository found in the Dropbox URL above and execute scripts and / or notebooks.
+Run time for notebooks ranges from minutes to multiple hours for subsampling experiments.
 
 ## Expected Output 
 Data analysis figures, identified variant tsv files, and bed files for identified variants.
