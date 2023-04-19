@@ -26,7 +26,7 @@ def main(bed_directories):
         v80 = open(f'{directory}/v80_pooled_{directory.split("/")[-1].split("_")[0]}.bed', 'w')
         v95 = open(f'{directory}/v95_pooled_{directory.split("/")[-1].split("_")[0]}.bed', 'w')
         for file in os.listdir(directory):
-            if 'pooled' in file:
+            if 'pooled' in file or '.tsv' in file:
                 continue
             read_file = open(f'{directory}/{file}', 'r')
             for line in read_file:
